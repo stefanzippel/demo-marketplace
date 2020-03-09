@@ -1,0 +1,7 @@
+version: "2"
+services:
+python-nats:
+image: <your dockerhub username>/python-nats:latest
+environment:
+- PYNATS_TOPIC=${NATS_TOPIC}
+network_mode: host
